@@ -1,0 +1,31 @@
+{% include 'cabecalho.html' %}
+
+
+<h1>Lista de Alunos</h1>
+
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>CPF</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        {% for item in lista %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.cpf }}</td>
+            <td>{{ item.nome }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+{% include 'rodape.html' %}
