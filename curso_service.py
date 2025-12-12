@@ -10,11 +10,7 @@ class CursoService:
         self.proximo_id = 1
 
 
-        # ---- Dados iniciais (comente se não quiser) ----
-        self.adicionar("Matemática", "Básico")
-        self.adicionar("Física", "Intermediário")
-        self.adicionar("Química", "Avançado")
-        # -------------------------------------------------
+        
 
 
     def adicionar(self, nome, nivel):

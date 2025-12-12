@@ -12,12 +12,7 @@ class ProfessorService:
         self.proximo_id = 1
 
 
-        # ---- Dados iniciais (comente se não quiser) ----
-        self.adicionar("Maria Silva", "2023001")
-        self.adicionar("João Pereira", "2023002")
-        self.adicionar("Ana Costa", "2023003")
-        # -------------------------------------------------
-
+       
 
     def adicionar(self, nome, cpf):
         id = self.proximo_id

@@ -1,0 +1,30 @@
+{% include 'cabecalho.html' %}
+
+
+<h1>Formulário de professor</h1>
+
+
+<form action="/professor/salvar {{professor.id}}" method="post" class="mt-3">
+
+
+    <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input type="text" name="nome"  value="{{professor.nome}}" class="form-control" required>
+    </div>
+
+
+    <div class="mb-3">
+        <label class="form-label">cpf</label>
+        <input type="text" name="cpf"  value=" {{professor.cpf}}" class="form-control" required>
+    </div>
+
+
+ 
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="/professor" class="btn btn-secondary">Voltar</a>
+
+
+</form>
+
+
+{% include 'rodape.html' %}
